@@ -43,7 +43,7 @@ onMount(() => {
         }
 
         if (!arr.length && isDesktop) {
-            panel.classList.add("closed")
+            panel.classList.add(" closed")
             return
         }
 
