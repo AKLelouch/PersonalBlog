@@ -7,7 +7,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-  title: "hoho",
+  title: "lulu",
   subtitle: "哎呀被发现啦",
   lang: "en",
   themeHue: 300,
