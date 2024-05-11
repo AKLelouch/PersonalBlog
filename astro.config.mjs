@@ -1,36 +1,36 @@
-import tailwind from "@astrojs/tailwind"
-import Compress from "astro-compress"
-import icon from "astro-icon"
-import { defineConfig } from "astro/config"
-import Color from "colorjs.io"
-import rehypeAutolinkHeadings from "rehype-autolink-headings"
-import rehypeKatex from "rehype-katex"
-import rehypeSlug from "rehype-slug"
-import remarkMath from "remark-math"
-import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
-import svelte from "@astrojs/svelte"
-import swup from '@swup/astro';
+import tailwind from "@astrojs/tailwind";
+import Compress from "astro-compress";
+import icon from "astro-icon";
+import { defineConfig } from "astro/config";
+import Color from "colorjs.io";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeKatex from "rehype-katex";
+import rehypeSlug from "rehype-slug";
+import remarkMath from "remark-math";
+import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
+import svelte from "@astrojs/svelte";
+import swup from "@swup/astro";
 
 const oklchToHex = (str) => {
-  const DEFAULT_HUE = 250
-  const regex = /-?\d+(\.\d+)?/g
-  const matches = str.string.match(regex)
-  const lch = [matches[0], matches[1], DEFAULT_HUE]
+  const DEFAULT_HUE = 250;
+  const regex = /-?\d+(\.\d+)?/g;
+  const matches = str.string.match(regex);
+  const lch = [matches[0], matches[1], DEFAULT_HUE];
   return new Color("oklch", lch).to("srgb").toString({
     format: "hex",
-  })
-}
+  });
+};
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nimble-salamander-9f8d7c.netlify.app/",
+  site: "https://www.aklelouch.cn/",
   base: "/",
   integrations: [
     tailwind(),
     swup({
       theme: false,
-      animationClass: 'transition-',
-      containers: ['main'],
+      animationClass: "transition-",
+      containers: ["main"],
       smoothScrolling: true,
       cache: true,
       preload: true,
@@ -67,7 +67,7 @@ export default defineConfig({
             tagName: "span",
             properties: {
               className: ["anchor-icon"],
-              'data-pagefind-ignore': true,
+              "data-pagefind-ignore": true,
             },
             children: [
               {
@@ -91,4 +91,4 @@ export default defineConfig({
       },
     },
   },
-})
+});

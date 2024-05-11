@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
   title: "lulu",
   subtitle: "哎呀被发现啦",
-  lang: "en",
+  lang: "ja",
   themeHue: 300,
   banner: {
     enable: true,
