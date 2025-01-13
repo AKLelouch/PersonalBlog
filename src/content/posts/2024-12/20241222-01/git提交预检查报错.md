@@ -3,7 +3,7 @@ title: git提交预检查报错
 published: 2024-12-22
 description: ''
 image: ''
-tags: ['Git','git hook']
+tags: ['Git', 'git hook']
 category: 'Git'
 draft: false
 ---
