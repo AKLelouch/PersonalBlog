@@ -1,11 +1,11 @@
 ---
-title: 前端规范之JS代码规范
+title: 前端工程化之JS代码规范
 published: 2025-01-11
 description: ''
 image: ''
-tags: ['代码规范', 'Git']
+tags: ['代码规范', 'Git', '前端工程化']
 category: 'Frontend'
-draft: true
+draft: false
 ---
 
 # 1 统一代码风格的重要性
@@ -138,7 +138,9 @@ npx prettier . --write
 
 Husky 是一个工具，它允许我们轻松地处理 Git Hooks 并在提交代码时运行我们想要的脚本。
 
-1. 安装 Husky：
+## 4.2 安装 Husky
+
+1. 安装脚本
 
 ```shell
 npm install --save-dev husky
@@ -168,7 +170,19 @@ git add .')"
 
 # 5 Lint-staged
 
-3.  将如下配置写入 package.json
+## 5.1 Lint-staged 是什么
+
+lint-staged 是一个在 git 暂存文件上运行 linter 的工具
+
+## 5.2 安装 Lint-staged
+
+1. 安装脚本
+
+```shell
+npm install --save-dev lint-staged # requires further setup
+```
+
+2. 配置，[更多配置...](https://github.com/lint-staged/lint-staged?tab=readme-ov-file#configuration)
 
 ```json
 {
@@ -177,3 +191,27 @@ git add .')"
   }
 }
 ```
+
+3. 修改 pre-commit 为
+
+```shell
+#!/bin/sh
+npx lint-staged
+```
+
+# 6 效果测试
+
+- indexA.js：</br>
+  ![alt text](image-2.png)</br>
+
+- indexB.js：</br>
+  ![alt text](image-4.png)</br>
+
+- 暂存区：只添加 indexB.js</br>
+  ![alt text](image-6.png)</br>
+
+- 提交：</br>
+  ![alt text](image-7.png)</br>
+  ![alt text](image-8.png)
+
+最终提交后只修改并提交 indeB.js，而 indexA.js 没有被修改。
