@@ -13,12 +13,13 @@ draft: false
 随着团队项目中代码数量的增长，项目成员不一致的编程风格，容易出现代码提交 diff 难以辨识的问题。今天这个同学在格式化代码时用的是 2 格缩进，明天另一个同学提交代码时用了 4 格缩进后，出现了一堆非业务代码的修改变更。导致在做 Code Review 时难以辨识真正的业务代码。
 ![alt text](image.png)
 接下来本文通过 ESLint+Prettier+husky+lint-staged 构建一套覆盖开发到提交的前端项目 JS 代码规范脚手架。</br>
-首先通过一下指令创建一个项目，后续的所有配置将在这个 demo 下运行
+首先通过以下指令创建一个项目，后续的所有配置将在这个 demo 下运行
 
 ```shell
  mkdir eslint-config-demo
  cd ./eslint-config-demo
  npm init
+ git init
 ```
 
 # 2 Eslint
