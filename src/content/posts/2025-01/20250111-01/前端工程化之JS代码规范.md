@@ -12,7 +12,7 @@ draft: false
 
 随着团队项目中代码数量的增长，项目成员不一致的编程风格，容易出现代码提交 diff 难以辨识的问题。今天这个同学在格式化代码时用的是 2 格缩进，明天另一个同学提交代码时用了 4 格缩进后，出现了一堆非业务代码的修改变更。导致在做 Code Review 时难以辨识真正的业务代码。
 ![alt text](image.png)
-接下来本文通过 ESLint+Prettier+husky+lint-staged 构建一套覆盖开发到提交的前端项目代码规范配置。</br>
+接下来本文通过 ESLint+Prettier+husky+lint-staged 构建一套覆盖开发到提交的前端项目 JS 代码规范脚手架。</br>
 首先通过一下指令创建一个项目，后续的所有配置将在这个 demo 下运行
 
 ```shell
@@ -215,3 +215,9 @@ npx lint-staged
   ![alt text](image-8.png)
 
 最终提交后只修改并提交 indeB.js，而 indexA.js 没有被修改。
+
+# 7 总结
+
+至此 JS 代码规范就全部完成，更多配置可根据文中链接自行添加。</br>
+本文所产出的脚手架已全部提交至[GitHub](https://github.com/AKLelouch/eslint-config-prettier-demo)中。</br>
+后续可以基于该脚手架快速搭建一个前端项目。
