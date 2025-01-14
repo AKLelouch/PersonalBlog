@@ -219,5 +219,5 @@ npx lint-staged
 # 7 总结
 
 至此 JS 代码规范就全部完成，更多配置可根据文中链接自行添加。</br>
-本文所产出的脚手架已全部提交至[GitHub](https://github.com/AKLelouch/eslint-config-prettier-demo)中。</br>
+本文所产出的脚手架已全部提交至 [GitHub](https://github.com/AKLelouch/eslint-config-prettier-demo) 中。</br>
 后续可以基于该脚手架快速搭建一个前端项目。
