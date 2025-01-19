@@ -111,4 +111,4 @@ npm version patch
 # 4 总结
 
 本文主要展示了一个 npm 项目的发布流程。
-文中项目链接已上传[github](https://github.com/AKLelouch/quick-sort-publish-demo)。
+文中项目已上传至[github](https://github.com/AKLelouch/quick-sort-publish-demo)。
