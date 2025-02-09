@@ -3,12 +3,12 @@ title: 面试题库——React篇
 published: 2025-02-09
 description: ''
 image: ''
-tags: []
-category: ''
+tags: ['前端', '面试']
+category: '前端面试'
 draft: false
 ---
 
-# 解释一下 React 虚拟 DOM 的工作原理
+# · 解释一下 React 虚拟 DOM 的工作原理
 
 ## 虚拟 DOM 的概念
 
@@ -52,7 +52,7 @@ React 使用高效的 Diffing 算法，主要包括：
 
 React 的虚拟 DOM 通过创建轻量级 JavaScript 对象表示 UI，结合高效的 Diffing 算法和批量更新机制，显著提升了 UI 更新的性能，同时简化了开发流程。
 
-# React 虚拟 DOM 对性能方面有什么帮助
+# · React 虚拟 DOM 对性能方面有什么帮助
 
 1. 减少直接操作真实 DOM 的开销
 2. 高效的差异对比（Diff）算法
@@ -63,7 +63,7 @@ React 的虚拟 DOM 通过创建轻量级 JavaScript 对象表示 UI，结合高
 
 React 的虚拟 DOM 通过减少直接操作真实 DOM 的次数、高效的差异对比算法、批量更新机制以及跨平台优化，显著提升了 UI 更新的性能。它使开发者能够以声明式的方式编写高性能的 UI，而无需手动优化 DOM 操作。
 
-# React 路由主要有几种模式
+# · React 路由主要有几种模式
 
 react 的路由有几种模式：hash（hashchange） 和 history （replaceState、pushState）
 
