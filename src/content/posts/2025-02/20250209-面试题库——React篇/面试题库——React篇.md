@@ -1,5 +1,5 @@
 ---
-title: 同一段逻辑setState竟然执行顺序不同
+title: 面试题库——React篇
 published: 2025-02-09
 description: ''
 image: ''
@@ -62,3 +62,45 @@ React 的虚拟 DOM 通过创建轻量级 JavaScript 对象表示 UI，结合高
 ## 总结
 
 React 的虚拟 DOM 通过减少直接操作真实 DOM 的次数、高效的差异对比算法、批量更新机制以及跨平台优化，显著提升了 UI 更新的性能。它使开发者能够以声明式的方式编写高性能的 UI，而无需手动优化 DOM 操作。
+
+# React 路由主要有几种模式
+
+react 的路由有几种模式：hash（hashchange） 和 history （replaceState、pushState）
+
+1. Hash 模式（HashRouter）
+   Hash 模式使用 URL 中的 哈希部分（#） 来实现路由。哈希部分的变化不会导致浏览器向服务器发送请求，因此适合静态部署或不需要服务器配置的场景。
+
+```jsx
+import { HashRouter, Route, Routes } from 'react-router-dom';
+
+function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </HashRouter>
+  );
+}
+```
+
+2. History 模式（BrowserRouter）
+   History 模式使用 HTML5 的 History API 来实现路由。它通过操作浏览器的历史记录来改变 URL，并且不会导致页面刷新。
+
+```jsx
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
+
+[React 路由使用](https://juejin.cn/post/7102047013818073096)
