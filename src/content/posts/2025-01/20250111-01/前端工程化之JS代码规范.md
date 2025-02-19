@@ -203,16 +203,13 @@ npx lint-staged
 # 6 效果测试
 
 - indexA.js：</br>
-  ![alt text](image-2.png)</br>
-
+  ![alt text](image-2.png)
 - indexB.js：</br>
-  ![alt text](image-4.png)</br>
-
+  ![alt text](image-4.png)
 - 暂存区：只添加 indexB.js</br>
-  ![alt text](image-6.png)</br>
-
+  ![alt text](image-6.png)
 - 提交：</br>
-  ![alt text](image-7.png)</br>
+  ![alt text](image-7.png)
   ![alt text](image-8.png)
 
 最终提交后只修改并提交 indeB.js，而 indexA.js 没有被修改。
