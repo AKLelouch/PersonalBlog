@@ -104,3 +104,7 @@ function App() {
 ```
 
 [React 路由使用](https://juejin.cn/post/7102047013818073096)
+
+# · React 性能优化方式
+
+![alt text](React性能优化方式.png)
